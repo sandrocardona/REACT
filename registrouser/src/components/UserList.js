@@ -6,12 +6,14 @@ class UserList extends Component{
         return(
             <ul>
             {this.props.users.map(u => {
-                <User 
-                name={u.name}
-                />
+                return(
+                    <User 
+                    name={u.name}
+                    />
+                )
             })}
             </ul>
-        );
+        )
     }
 }
 
